@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My To Do List</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            padding: 10px;
+            margin: 5px 0;
+        }
+        .odd {
+            background-color: #ccf2ff; 
+        }
+        .even {
+            background-color: #99e6ff;
+        }
+        .checked {
+            background-color: #d9d9d9; 
+            text-decoration: line-through;
+        }
+        .checkbox::before {
+            content: '\2610'; 
+            display: inline-block;
+            margin-right: 10px;
+        }
+        .checkbox.checked::before {
+            content: '\2611'; 
+        }
+        .cross::after {
+            content: '\274c';
+            display: inline-block;
+            margin-left: 10px;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>My To Do List</h1>
+    <ul>
+        <li class="odd checkbox">Hit the gym<span class="cross"></span></li>
+        <li class="even checkbox">Pay bills<span class="cross"></span></li>
+        <li class="odd checkbox checked">Meet John<span class="cross"></span></li>
+        <li class="even checkbox checked">Buy eggs<span class="cross"></span></li>
+        <li class="odd checkbox">Read a book<span class="cross"></span></li>
+        <li class="even checkbox">Organize office<span class="cross"></span></li>
+        <li class="odd checkbox">Eat dinner<span class="cross"></span></li>
+        <li class="even checkbox">Buy apples<span class="cross"></span></li>
+        <li class="odd checkbox">Meet Georg<span class="cross"></span></li>
+        <li class="even checkbox checked">Feed the cat<span class="cross"></span></li>
+        <li class="odd checkbox">Write a letter<span class="cross"></span></li>
+        <li class="even checkbox">Run 1 km<span class="cross"></span></li>
+    </ul>
+</body>
+</html>
