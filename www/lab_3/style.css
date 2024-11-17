@@ -1,0 +1,27 @@
+.table {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 600px;
+    font-family: Arial, sans-serif;
+}
+
+.table, .table th, .table td {
+    border: 1px solid #6395ff;
+    padding: 8px;
+}
+
+.table thead {
+    background-color: #dae1f8;
+}
+
+.table tfoot {
+    background-color: #5776b1;
+    color: #fff;
+    text-align: right;
+    font-weight: bold;
+}
+
+.table tfoot td {
+    border: none;
+    text-align: right;
+}

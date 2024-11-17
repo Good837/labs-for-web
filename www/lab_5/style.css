@@ -1,0 +1,17 @@
+.frame-container {
+    display: inline-block;
+    padding: 10px;
+    background-color: #f3a89a;
+    transform: rotate(45deg); 
+    margin: 100px;
+}
+
+.frame-border {
+    padding: 2px;
+    background-color: #fff;
+}
+
+.image {
+    display: block;
+    transform: rotate(-45deg); 
+}
