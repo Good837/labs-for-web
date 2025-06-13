@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button id="openModalBtn">Створити новий продукт</button>
+    
+    <div id="modal" class="modal">
+        <div class="modal-content">
+          <span id="closeModalBtn" class="close">&times;</span>
+          <h2>Створити продукт</h2>
+          <form id="registrationForm" action="javascript:void(0);">
+            <label for="title">Title</label>
+            <input type="text" id="title" name="title" required>
+            
+            <label for="descript">Description</label>
+            <input type="text" id="descript" name="descript" required>
+            
+            <label for="price">Price</label>
+            <input type="number" id="price" name="price" required>
+            
+            <label for="confirmPassword">Category</label>
+            <select id="category" name="category" required>
+                <option value="" disabled selected>Select a category</option>
+                <option value="books">Books</option>
+                <option value="electronics">Electronics</option>
+                <option value="clothing">Clothing</option>
+                <option value="home">Home & Furniture</option>
+                <option value="sports">Sports & Outdoors</option>
+            </select>
+            
+            <button type="submit" id="submitBtn">Створити</button>
+          </form>
+        </div>
+      </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

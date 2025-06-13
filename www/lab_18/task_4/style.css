@@ -1,0 +1,59 @@
+button {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    transition: box-shadow 0.2s, background-color 0.2s;
+}
+
+.button-container {
+    width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.button-red {
+    border: 1px solid black;
+    color: white;
+    background: red;
+}
+
+.button-blue {
+    border: 2px solid blue;
+    color: white;
+    background: blue;
+}
+
+.button-green {
+    border: 1px solid green;
+    color: white;
+    background: green;
+}
+
+.rounded-purple {
+    border: 1px solid black;
+    color: white;
+    background: purple;
+    border-radius: 15px;
+}
+
+.rounded-orange {
+    border: 2px solid orange;
+    color: white;
+    background: orange;
+    border-radius: 20px;
+}
+
+.rounded-pink {
+    border: 1px solid pink;
+    color: white;
+    background: pink;
+    border-radius: 25px;
+}
+
+button:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}

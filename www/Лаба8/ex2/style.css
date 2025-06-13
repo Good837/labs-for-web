@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+header {
+    position: sticky; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    z-index: 1000;
+}
+
+.t h1 {
+    color: rgb(168, 168, 168);
+}
+
+div .t {
+    height: 100px;
+    background-color: rgb(36, 31, 26);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div .d {
+    background-color: black;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    padding: 6px 5px 5px 5px;
+    gap: 2px;
+}
+
+button {
+    height: 100%;
+    padding: 2px 0 2px 0;
+    background-color: rgb(168, 168, 168);
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: rgb(195, 193, 193);
+}
+
+.aside-top {
+    background-color: rgb(203, 193, 189);
+    padding: 5px 5px 5px 5px;
+}
+
+.aside-top h2, p {
+    margin-bottom: 16px;
+    text-indent: 20px;
+}
+
+.aside-bottom {
+    background-color: rgb(230, 223, 221);
+    padding: 10px 5px 5px 5px;
+}
+
+.aside-bottom h3, p {
+    margin-bottom: 16px;
+    text-indent: 20px;
+}
+
+.foot {
+    background-color: rgb(203, 193, 189);
+    padding: 15px 0 15px 5px;
+}
+
+@media (min-width: 400px) and (max-width: 768px) {
+    div .d {
+        height: 40px;
+        display: flex;
+        flex-direction: row;
+        padding: 6px 5px 5px 5px;
+    }
+
+    button {
+        width: 100%;
+    }
+    
+}
+
+@media (min-width:768px) {
+    div .d {
+        height: 40px;
+        display: flex;
+        flex-direction: row;
+        padding: 6px 5px 5px 5px;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+    aside {
+        flex: 1;
+        display: flex;
+        flex-direction: row-reverse;
+        overflow: visible;
+        height: auto;
+    }
+
+    .aside-bottom {
+        position: relative;
+        width: 1300px;
+        padding-top: 20px;
+        
+    }
+
+    .sticky {
+        position: sticky;
+        top: 160px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
